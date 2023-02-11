@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+#container-inicio .container-titulo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#container-inicio .container-titulo h1{
+font-size: 6rem;
+color: orange;
+margin-bottom: 5rem;
+text-shadow: 1px 1px black;
+}
+
+

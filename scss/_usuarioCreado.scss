@@ -1,0 +1,53 @@
+.container-logeo-usuario{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+.container-titulo-boton{
+    background-color: rgba(209, 129, 10, 0.815);
+    height: 70%;
+    width: 50%;
+    border-radius: 5%;
+    
+    .container-titulo-logeo{
+        margin-bottom: 300px;
+        .fotoUsuario{
+            height: 110px;
+            border: 3px solid black; 
+            border-radius: 60%;
+            position: absolute;
+            right: 30%;
+            top: 33%;
+
+        
+
+        }
+        h1{
+            font-size:5rem;
+            color: rgb(12, 8, 1);
+            margin-bottom: 10;
+        }
+        h2{
+            font-size: 2.5rem;
+            padding-top: 10%;
+            display: inline-block;
+        }
+    }
+    
+    .containerBoton{
+        
+        form{
+            input{
+                font-size: 2rem;
+                color: rgb(136, 91, 7);
+            }
+            input:hover{
+                font-size: 2.2rem;
+                transition: .2s;
+                }
+        }
+    }
+}
+    
+}

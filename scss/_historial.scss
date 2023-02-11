@@ -1,0 +1,66 @@
+#container-inicio-historial{
+    
+    background-color: beige;
+    padding-top: 10rem;
+
+
+    .container-titulo{
+        display: flex;
+        font-size: 10rem;
+        text-shadow: 1px 1px black;
+        color: orange;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10rem;
+        flex-direction: column;
+
+        .subtitulo-historial{
+            font-size: 3rem;
+            color: black;
+        }
+    }
+    
+    
+    .resultadosDeEjercicios{
+        font-size: 2rem;
+        margin-left: 1rem;
+        color: rgb(105, 128, 0);
+
+        p{
+            margin-bottom: 3rem;
+        }
+        
+    }
+    
+    .botones-historial{
+        flex-direction: column;
+        display: flex;
+        margin-left: 1rem;
+    
+        input{
+            padding: 10px;
+            width: 12rem;
+            background-color: orange;
+        }
+
+        input:hover{
+            background-color: rgb(255, 253, 253);
+            transition: .2s;
+
+        }
+        a{
+            font-size: 3rem;
+            text-decoration: none;
+            color: orange;
+            margin-top: 1rem;
+        }
+
+        a:hover{
+            color: black;
+            transition: .2s;
+        }
+    }
+    
+}
+
+

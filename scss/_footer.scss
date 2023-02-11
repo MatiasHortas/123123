@@ -1,0 +1,23 @@
+#container-footer {
+    background-color: rgb(2, 1, 1);
+    display: flex;
+    justify-content: center;
+
+
+
+    .iconos {
+        display: inline-block;
+        font-size: 30px;
+        padding: 2.5rem 50px;
+        color: rgb(253, 243, 243);
+
+    }
+    .iconos:hover{
+        color:orange;
+        transition: .2s;
+    }
+
+
+
+
+}

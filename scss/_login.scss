@@ -1,0 +1,54 @@
+.container-login{
+    background: linear-gradient(rgba(22, 18, 5, 0.459), rgba(0, 0, 0, 0.5)), url(../images/gim1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    #container-formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 35%;
+    margin-left: 34%;
+    margin-top: 10%;
+    background-color: rgba(192, 191, 191, 0.575);
+    border-radius: 5%;
+}
+}
+
+
+#container-formulario .titulo-formulario{
+color: orange;
+text-shadow: 1px 1px black;
+font-size: 3.5rem;
+margin-bottom: 30px;
+}
+
+#container-formulario form{
+   width: 40%;
+   margin-left: 30%;
+}
+#container-formulario input{
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+
+::placeholder{
+    color: white;
+}
+
+
+#container-formulario #boton {
+    background-color: orange;
+    color:white;
+    padding: 10px 65px;
+    }
+
+#container-formulario #boton:hover {
+background-color: rgb(255, 255, 255);
+color:rgb(7, 7, 7);
+}
