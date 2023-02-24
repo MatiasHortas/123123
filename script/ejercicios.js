@@ -3,6 +3,33 @@ let ejercicioPrimerDia = document.getElementById("form1")
 let ejercicioRealizadoPecho1 = document.getElementById("ejercicioRealizadoPecho1")
 let pMostrar = document.getElementById("mostrarejercicio")
 
+let ejerciciosRegistros = []
+let ejerciciosRegistrosDia2 = []
+let ejerciciosRegistrosDia3 = []
+
+class EjerciciosPrimerDia {
+    constructor(ejercicio, kilos, dataid) {
+        this.ejercicio = ejercicio
+        this.kilos = kilos
+        this.dataid = dataid
+    }
+}
+
+class EjerciciosSegundoDia {
+    constructor(ejercicio, kilos) {
+        this.ejercicio = ejercicio
+        this.kilos = kilos
+    }
+}
+
+class EjerciciosTercerDia {
+    constructor(ejercicio, kilos) {
+        this.ejercicio = ejercicio
+        this.kilos = kilos
+    }
+}
+
+
 const botonEjercicio2 = document.getElementById("botonEjercicio2")
 let ejercicioSegundoDia = document.getElementById("form2")
 let ejercicioRealizadoSegundoDia2 = document.getElementById("ejercicioRealizadoSegundoDia2")
@@ -15,7 +42,7 @@ let pMostrar3 = document.getElementById("mostrarejercicio3")
 
 
 
-// envio del 2do input
+// se realiz un envio de los ejercicios realizados del primer dia
 
 ejercicioPrimerDia.addEventListener(`submit`, (e) => {
     e.preventDefault()
@@ -30,20 +57,32 @@ ejercicioPrimerDia.addEventListener(`submit`, (e) => {
         ejercicioRealizadoPecho1.style.borderColor = "red"
         pMostrar.style.color = "red"
         return
-    }const historial = { respuesta: respuesta, respuesta1: respuesta1 };
-	localStorage.setItem('ejerciciosGuardados1', JSON.stringify(historial));
+
+    }
+
+
+    ejerciciosRegistros.push(new EjerciciosPrimerDia(respuesta, respuesta1))
+    localStorage.setItem('ejerciciosPrimerDia', JSON.stringify(ejerciciosRegistros));
+
+
     document.getElementById("mostrarejercicio").innerHTML = ""
+    Toastify({
+        text:"Ejercicio " + respuesta + " Cargado en historial",
+        duration:2000,
+        gravity: "top",
+        position: "right",
+    }).showToast();
 })
 
 
-// envio del 2do input
+// se realiz un envio de los ejercicios realizados del segundo dia
 
 ejercicioSegundoDia.addEventListener(`submit`, (e) => {
     e.preventDefault()
     let respuesta = document.getElementById("ejercicioSegundoDia").value;
     let respuesta1 = document.getElementById("ejercicioRealizadoSegundoDia2").value;
 
-   
+
 
     ejercicioRealizadoSegundoDia2.value = ""
     ejercicioRealizadoSegundoDia2.style.borderColor = ""
@@ -53,13 +92,20 @@ ejercicioSegundoDia.addEventListener(`submit`, (e) => {
         ejercicioRealizadoSegundoDia2.style.borderColor = "red"
         pMostrar2.style.color = "red"
         return
-    } const historial1 = { respuesta: respuesta, respuesta1: respuesta1 };
-	localStorage.setItem('ejerciciosGuardados', JSON.stringify(historial1));
+    }
+    ejerciciosRegistrosDia2.push(new EjerciciosSegundoDia(respuesta, respuesta1))
+    localStorage.setItem('ejerciciosSegundoDia', JSON.stringify(ejerciciosRegistrosDia2));
     document.getElementById("mostrarejercicio2").innerHTML = ""
+    Toastify({
+        text:"Ejercicio " + respuesta + " Cargado en historial",
+        duration:2000,
+        gravity: "top",
+        position: "right",
+    }).showToast();
 })
 
 
-// envio del 3er input
+// se realiz un envio de los ejercicios realizados del tercer dia
 ejercicioTercerDia.addEventListener(`submit`, (e) => {
     e.preventDefault()
     let respuesta = document.getElementById("ejercicioTercerDia").value;
@@ -78,9 +124,14 @@ ejercicioTercerDia.addEventListener(`submit`, (e) => {
         pMostrar3.style.color = "red"
         return
     }
-    const historial2 = { respuesta: respuesta, respuesta1: respuesta1 };
-	localStorage.setItem('ejerciciosGuardados2', JSON.stringify(historial2));
+    ejerciciosRegistrosDia3.push(new EjerciciosTercerDia(respuesta, respuesta1))
+    localStorage.setItem('ejerciciosTercerDia', JSON.stringify(ejerciciosRegistrosDia3));
     document.getElementById("mostrarejercicio3").innerHTML = ""
+    Toastify({
+        text:"Ejercicio " + respuesta + " Cargado en historial",
+        duration:2000,
+        gravity: "top",
+        position: "right",
+    }).showToast();
 
 })
-

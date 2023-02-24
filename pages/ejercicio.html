@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Icono musculo.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Gentium+Plus:ital,wght@1,700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../style/style.css">
     <title>Proyecto Final</title>
 </head>
@@ -16,7 +22,7 @@
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./ejercicio.html">Ejercicio</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./historial.html">Historial</a></li>
                     <li><a href="../pages/usuarioCreado.html">Usuario</a></li>
 
                 </ul>
@@ -25,34 +31,36 @@
     </header>
 
     <main>
-        <section id="container-ejercicio">
+        <section id="contenedor-ejercicio">
             <div class="contenedor-todo-ejercicio">
                 <p class="text-explicacion-ejercicio">Ingresar ejercicio realizado con cantidad de kilos levantados</p>
-                <h2 id="tituloEjercico">Dia 1</h2>
-                <h3 class="tituloDiaMusculo">Pecho y Triceps</h3>
 
-                <!-- a                                    -->
                 <div class="form-group">
-                <form action="" id="form1">
-                    <label for="">Que ejercicio realizaste?</label>
-                    <select id="ejercicioRealizadoPecho">
-                        <option value="pressBanca">Press Banca</option>
-                        <option value="pressBancaIn">Press Banca inclinado con mancuerna</option>
-                        <option value="pressBancaDec">Press Banca declinado</option>
-                        <option value="crucePoleas">Cruce de poleas</option>
-                        <option value="pressFrances">Press frances en banco plano</option>
-                        <option value="extenVerticales">Extensiones verticales</option>
-                        <option value="tricepPoleaBarra">Triceps en polea alta barra</option>
-                        <option value="tricepPoleaSoga">Triceps en polea alta soga</option>
+                    <h2 id="tituloEjercico">Dia 1</h2>
+                    <h3 class="tituloDiaMusculo">Pecho y Triceps</h3>
 
-                    </select>
-                    <label for="">Cuantos Kilos Levantaste</label>
-                    <input type="text" name="" id="ejercicioRealizadoPecho1">
-                    <p id="mostrarejercicio"></p>
 
-                    <input type="submit" value="Listo" id="botonEjercicio">
-                </form>
-            </div>
+
+                    <form action="" id="form1">
+                        <label for="">Que ejercicio realizaste?</label>
+                        <select id="ejercicioRealizadoPecho">
+                            <option value="Press banca" data-id="1">Press Banca</option>
+                            <option value="Press banca inclinado">Press Banca inclinado con mancuerna</option>
+                            <option value="Press banca beclinado">Press Banca declinado</option>
+                            <option value="Cruce en poleas">Cruce de poleas</option>
+                            <option value="Press frances">Press frances en banco plano</option>
+                            <option value="Extension verticales">Extensiones verticales</option>
+                            <option value="Triceps en polea con barra">Triceps en polea alta barra</option>
+                            <option value="Triceps en polea con soga">Triceps en polea alta soga</option>
+
+                        </select>
+                        <label for="">Cuantos Kilos Levantaste</label>
+                        <input type="number" name="" id="ejercicioRealizadoPecho1">
+                        <p id="mostrarejercicio"></p>
+
+                        <input type="submit" value="Listo" id="botonEjercicio">
+                    </form>
+                </div>
 
 
 
@@ -65,20 +73,20 @@
                     <form action="" id="form2">
                         <label for="">Que ejercicio realizaste?</label>
                         <select id="ejercicioSegundoDia">
-                            <option value="pressMilitar">Press militar</option>
-                            <option value="elevLat">Elevaciones laterales</option>
-                            <option value="pressFrontBar">Press Frontal barra</option>
-                            <option value="remoCuello">Remo al cuello</option>
-                            <option value="arnoldPress">Arnold Press</option>
-                            <option value="sentadilla">Sentadilla</option>
-                            <option value="pesMuerto">Peso Muerto</option>
-                            <option value="legPress">Leg Press</option>
-                            <option value="hipThrust">Hip Thrust Barra</option>
-                            <option value="cuadMaq">Cuadriceps Maquina</option>
-                            <option value="isqMaq">Isquio En Maquina</option>
+                            <option value="Press militar">Press militar</option>
+                            <option value="Elevaciones laterales">Elevaciones laterales</option>
+                            <option value="Press front">Press Front</option>
+                            <option value="Remo al menton">Remo al menton</option>
+                            <option value="Arnod press">Arnold Press</option>
+                            <option value="Sentadilla">Sentadilla</option>
+                            <option value="Peso muerto">Peso Muerto</option>
+                            <option value="Leg press">Leg Press</option>
+                            <option value="Hip thrust">Hip Thrust Barra</option>
+                            <option value="Cuadriceps maquina">Cuadriceps Maquina</option>
+                            <option value="Isquio maquina">Isquio En Maquina</option>
                         </select>
                         <label for="">Cuantos Kilos Levantaste</label>
-                        <input type="text" name="" id="ejercicioRealizadoSegundoDia2">
+                        <input type="number" name="" id="ejercicioRealizadoSegundoDia2">
                         <p id="mostrarejercicio2"></p>
 
                         <input type="submit" value="Listo" id="botonEjercicio2">
@@ -101,17 +109,17 @@
                     <form action="" id="form3">
                         <label for="">Que ejercicio realizaste?</label>
                         <select id="ejercicioTercerDia">
-                            <option value="jalonEspdMq">Jalon espalda maquina</option>
-                            <option value="altMancInc">Alternado Mancuernas inclinado</option>
-                            <option value="polEspdabt">Polea Espalda Abierto</option>
-                            <option value="polEspdacer">Polea Espalda Cerrado</option>
-                            <option value="martilloManc">Martillo mancuerna</option>
-                            <option value="curl21">Curl 21</option>
-                            <option value="polEspda">Polea espalda</option>
+                            <option value="Jalon espalda en maquina" >Jalon espalda maquina</option>
+                            <option value="Alternado mancuernas">Alternado Mancuernas</option>
+                            <option value="Polea espalda abierto">Polea Espalda Abierto</option>
+                            <option value="Remo dorsal">Remo Dorsal</option>
+                            <option value="Biceps en banco"> Biceps en banco</option>
+                            <option value="Curl 21">Curl 21</option>
+                            <option value="Remo mancuerna">Remo mancuerna</option>
 
                         </select>
                         <label for="">Cuantos Kilos Levantaste</label>
-                        <input type="text" name="" id="ejercicioRealizadoTercerDia2">
+                        <input type="number" name="" id="ejercicioRealizadoTercerDia2">
                         <p id="mostrarejercicio3"></p>
 
                         <input type="submit" value="Listo" id="botonEjercicio3">
@@ -119,29 +127,22 @@
 
 
                     <img src="../images/hellfish.png" alt="HellfishSimspon" class="imagenEjercicio">
-                    <a href="./historial.html" class="linkParaVerHistorial">Ver historial</a>
+                    
                 </div>
             </div>
 
         </section>
     </main>
-    <div>
 
-
-
-
-    </div>
     <footer id="container-footer">
-        <div class="container-titulo-footer">
-            <h2 class="titulo-footer">Redes</h2>
-        </div>
+        
         <div>
             <p class="iconos">Facebook</p>
             <p class="iconos">Instagram</p>
             <p class="iconos">Twiiter</p>
         </div>
     </footer>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../script/ejercicios.js"></script>
 
 </body>

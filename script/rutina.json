@@ -1,0 +1,154 @@
+[
+        {
+            "id": 1,
+            "titulo": "Press Banca",
+            "video": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bench-press-1568117208.gif"
+            
+        },
+
+        {
+            "id": 2,
+            "titulo": "Press Banca inclinado",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/press_inclik.gif"
+            
+        },
+
+        {
+            "id": 3,
+            "titulo": "Press Banca declinado",
+            "video": "https://ginasiovirtual.com/wp-content/uploads/2021/04/supino-declinado.gif"
+            
+        },
+
+        {
+            "id": 4,
+            "titulo": "Cruce de poleas",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/cruces_p.gif"
+            
+        },
+
+        {
+            "id": 5,
+            "titulo": "Press frances en banco plano",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/franbarra.gif"
+            
+        },
+
+        {
+            "id": 6,
+            "titulo": "Extensiones verticales",
+            "video": "http://newlife.com.cy/wp-content/uploads/2019/11/17381301-Dumbbell-Seated-Reverse-Grip-One-Arm-Overhead-Tricep-Extension_Upper-Arms_360.gif"
+            
+        },
+        {
+            "id": 7,
+            "titulo": "Triceps en polea alta barra",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/7c9218fc52e8256003159658198439e2.gif"
+            
+        },
+        {
+            "id": 8,
+            "titulo": "Triceps en polea alta soga",
+            "video": "https://64.media.tumblr.com/efb5a55113db7066bcd595c14aa16d27/3544f6fd290e7048-a5/s1280x1920/49d420638310d5fcf5326c90aee44cfbdd53442d.gifv"
+            
+        },
+        {
+            "id": 9,
+            "titulo": "Press militar",
+            "video": "https://doriangym.es/wp-content/uploads/2022/10/press-militar.gif"
+            
+        },
+        {
+            "id": 10,
+            "titulo": "Elevaciones laterales",
+            "video": "https://doriangym.es/wp-content/uploads/2021/11/ejecucion-elevaciones-laterales-con-mancuernas.gif"
+            
+        },
+        {
+            "id": 11,
+            "titulo": "Press front",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/frontal.gif"
+            
+        },
+        {
+            "id": 12,
+            "titulo": "Remo al menton",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/trapecio_b.gif"
+            
+        },
+        {
+            "id": 13,
+            "titulo": "Arnold Press",
+            "video": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Arnold-Press.gif"
+            
+        },
+        {
+            "id": 14,
+            "titulo": "Sentadilla",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/sentadill_cerr.gif"
+            
+        },
+        {
+            "id": 15,
+            "titulo": "Peso Muerto",
+            "video": "https://adictosalgym.com/wp-content/uploads/2018/12/00851301-Barbell-Romanian-Deadlift_Hips_720.gif"
+            
+        },
+        {
+            "id": 16,
+            "titulo": "Hip thrust",
+            "video": "https://www.inspireusafoundation.org/wp-content/uploads/2022/09/barbell-hip-thrust.gif"
+            
+        },
+        {
+            "id": 17,
+            "titulo": "Cuadriceps Maquina",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/camillazx.gif"
+            
+        },
+        {
+            "id": 18,
+            "titulo": "Isquio En Maquina",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/femoral.gif"
+            
+        },
+        {
+            "id": 19,
+            "titulo": "Jalon espalda maquina",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/dor6.gif"
+            
+        },
+        {
+            "id": 20,
+            "titulo": "Alternado Mancuernas ",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/alterno.gif"
+            
+        },
+        {
+            "id": 21,
+            "titulo": "Polea Espalda Abierto",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/latzugmaschine_uebungen-untergriff_breit.gif"
+            
+        },
+        {
+            "id": 22,
+            "titulo": "Remo Dorsal",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/dor4.gif"
+            
+        },
+        {
+            "id": 23,
+            "titulo": "Biceps En Banco",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/scott.gif"
+            
+        },
+        {
+            "id": 24,
+            "titulo": "Remo Mancuerna",
+            "video": "https://www.thingys.com.ar/gymapps/tutorial/dors1.gif"
+            
+        }
+
+    ]
+
+

@@ -1,66 +1,136 @@
-#container-inicio-historial{
-    
-    background-color: beige;
-    padding-top: 10rem;
+    #container-inicio-historial {
+        background-color: $colorFondo;
+        padding-top: 10rem;
+        height: 100%;
 
 
-    .container-titulo{
-        display: flex;
-        font-size: 10rem;
-        text-shadow: 1px 1px black;
-        color: orange;
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 10rem;
-        flex-direction: column;
+        .container-titulo {
+            display: flex;
+            font-size: $sizeTituloi;
+            text-shadow: 1px 1px black;
+            color: $colorPrincipal;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 10rem;
+            flex-direction: column;
 
-        .subtitulo-historial{
-            font-size: 3rem;
-            color: black;
+            .subtitulo-historial {
+                font-size: $sizeSubTitulo;
+                color: $colorPrincipal;
+                margin-bottom: 6rem;
+
+            }
         }
+
+
+        #resultadosDeEjercicios {
+            font-size: 2rem;
+            margin-left: 1rem;
+            color: $colorPrincipal;
+
+
+
+            p {
+                margin-bottom: 3rem;
+                color: $colorLetras;
+
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+        }
+
+        .esconder {
+            display: none;
+        }
+
+        .botones-historial {
+            display: flex;
+            margin-left: 1rem;
+            flex-direction: row;
+            padding-bottom: 3rem;
+            input {
+                padding: 10px;
+                width: 12rem;
+                background-color: $colorPrincipal;
+                color: rgb(10, 10, 10);
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+
+            input:hover {
+
+                transition: .2s;
+                transform: scale(1.1);
+
+            }
+
+
+            #botonPruebajson{
+                margin-left: 15px;
+            }
+        }
+    
+        #containerJson {
+            background-color: rgba(192, 190, 190, 0.986);
+            position: absolute;
+            display: flex;
+            width: 100vw;
+
+            #mostrarJson {
+                background-color: rgba(192, 190, 190, 0.986);
+                align-items: center;
+                width: 100vw;
+                flex-direction: column;
+                z-index: 1;
+                display: flex;
+                bottom: 630px;
+                position: relative;
+                transition: all .5s;
+            }
+
+
+
+            #botonPruebajson1 {
+                z-index: 2;
+                font-size: 5rem;
+                color: rgb(0, 0, 0);
+                cursor: pointer;
+                position: fixed;
+                right: 80rem;
+                top: 100px;
+                
+            }
+
+            #botonPruebajson1:hover {
+                transition: .4s;
+                transform: scale(1.2);
+            }
+
+            li {
+                list-style: none;
+
+
+                h3 {
+                    font-size: 1.5rem;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                img {
+                    width: 400px;
+                    height: 400px;
+
+                }
+
+            }
+        }
+
+        .mostrame {
+            opacity: 0;
+        }
+
     }
-    
-    
-    .resultadosDeEjercicios{
-        font-size: 2rem;
-        margin-left: 1rem;
-        color: rgb(105, 128, 0);
-
-        p{
-            margin-bottom: 3rem;
-        }
-        
-    }
-    
-    .botones-historial{
-        flex-direction: column;
-        display: flex;
-        margin-left: 1rem;
-    
-        input{
-            padding: 10px;
-            width: 12rem;
-            background-color: orange;
-        }
-
-        input:hover{
-            background-color: rgb(255, 253, 253);
-            transition: .2s;
-
-        }
-        a{
-            font-size: 3rem;
-            text-decoration: none;
-            color: orange;
-            margin-top: 1rem;
-        }
-
-        a:hover{
-            color: black;
-            transition: .2s;
-        }
-    }
-    
-}
-
-

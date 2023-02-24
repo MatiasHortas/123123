@@ -1,29 +1,36 @@
-#container-ejercicio {
+#contenedor-ejercicio {
     display: flex;
     flex-direction: column;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    background-color: rgb(88, 54, 2);
+    height: 100%;
+    background-color: $colorFondo;
 
     .contenedor-todo-ejercicio {
         margin-top: 8rem;
-        margin-left: 1rem;
+        margin-left: 3.5rem;
 
     }
     .form-group{
         margin-bottom: 2rem;
         font-size: 20px;
+        color:white;
         select{
             padding: 5px;
             width: 230px;
+            font-family: 'Domine', serif;    
+
         }
         input{
             padding: 5px;
             margin-bottom: 10px;
+            font-family: 'Domine', serif;    
+            
             
         }
+      
+        
 
         #botonEjercicio3, #botonEjercicio2, #botonEjercicio {
             padding: 7px 15px;
@@ -40,10 +47,8 @@
     .text-explicacion-ejercicio {
         font-size: 3rem;
         color: orange;;
-        margin-bottom: 2rem;
-        width: 40%;
-        margin-left: 1rem;
-
+        margin-bottom: 4rem;
+        width: 60%;
     }
 
     .linkParaVerHistorial {
@@ -67,8 +72,5 @@
         
     }
 
-    .imagenEjercicio:hover{
-        transform:rotate(180);
-        transition: .2s;
-    }
+
 }

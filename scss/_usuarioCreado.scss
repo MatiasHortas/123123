@@ -36,11 +36,15 @@
     }
     
     .containerBoton{
-        
+        position: relative;
+        bottom: 100px;
         form{
             input{
                 font-size: 2rem;
                 color: rgb(136, 91, 7);
+                padding: 8px;
+                font-weight: bold;
+                
             }
             input:hover{
                 font-size: 2.2rem;

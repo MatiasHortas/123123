@@ -11,11 +11,12 @@ let logeoUsuario = JSON.parse(localStorage.getItem(`usuario`));
 boton.addEventListener(`click`, (e) => {
     e.preventDefault()
 
-
     logeoUsuario.forEach((usuario) => {
         if (usuarioLogin.value == usuario.usuario && contraseñaLogin.value == usuario.contraseña) {
-            textoLogeo.innerHTML = "Te logeaste"
-            window.location = "../index.html"
+            swal("Te logeaste exitosamente", "Bievenido " + usuario.usuario, "success")
+            setInterval(() => {
+                window.location = "../index.html"
+            }, 2000);
         } else {
             usuarioLogin.value = ""
             contraseñaLogin.value = ""
@@ -28,4 +29,3 @@ boton.addEventListener(`click`, (e) => {
     })
 
 })
-
