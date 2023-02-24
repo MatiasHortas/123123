@@ -7,6 +7,7 @@ let usuariosRegistrados = []
 let logeoUsuario = JSON.parse(localStorage.getItem(`usuario`));
 
 
+// se realiza una busqueda del usuario y contraseña registrado para que pueda acceder
 
 boton.addEventListener(`click`, (e) => {
     e.preventDefault()

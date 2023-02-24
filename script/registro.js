@@ -41,6 +41,7 @@ botonRegister.addEventListener(`click`, (e) => {
 
 })
 
+// // se busca el usuario ingresado para que no pueda ingresar nuevamente el mismo
 
 function busquedaUsuario() {
     let logeoUsuario = JSON.parse(localStorage.getItem(`usuario`));

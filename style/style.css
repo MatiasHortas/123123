@@ -247,8 +247,9 @@ nav {
       padding: 10px;
       width: 12rem;
       background-color: orange;
-      color: #0a0a0a;
+      color: black;
       font-weight: bolder;
+      font-family: 'Domine', serif;
       cursor: pointer; }
     #container-inicio-historial .botones-historial input:hover {
       transition: .2s;

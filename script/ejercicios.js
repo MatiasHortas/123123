@@ -42,7 +42,7 @@ let pMostrar3 = document.getElementById("mostrarejercicio3")
 
 
 
-// se realiz un envio de los ejercicios realizados del primer dia
+// se almacenan los ejercicios del primer dia en un localstorage para poder enviarlos al historial
 
 ejercicioPrimerDia.addEventListener(`submit`, (e) => {
     e.preventDefault()
@@ -75,7 +75,7 @@ ejercicioPrimerDia.addEventListener(`submit`, (e) => {
 })
 
 
-// se realiz un envio de los ejercicios realizados del segundo dia
+// se almacenan los ejercicios del segundo dia en un localstorage para poder enviarlos al historial
 
 ejercicioSegundoDia.addEventListener(`submit`, (e) => {
     e.preventDefault()
@@ -105,7 +105,7 @@ ejercicioSegundoDia.addEventListener(`submit`, (e) => {
 })
 
 
-// se realiz un envio de los ejercicios realizados del tercer dia
+// se almacenan los ejercicios del segundo dia en un localstorage para poder enviarlos al historial
 ejercicioTercerDia.addEventListener(`submit`, (e) => {
     e.preventDefault()
     let respuesta = document.getElementById("ejercicioTercerDia").value;
