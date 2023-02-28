@@ -53,7 +53,7 @@ ejercicioPrimerDia.addEventListener(`submit`, (e) => {
     ejercicioRealizadoPecho1.style.borderColor = ""
     pMostrar.style.color = ""
     if (respuesta1 === "") {
-        document.getElementById("mostrarejercicio").innerHTML = "porfavor insertar un valor correcto"
+        document.getElementById("mostrarejercicio").innerHTML = "insertar un valor correcto"
         ejercicioRealizadoPecho1.style.borderColor = "red"
         pMostrar.style.color = "red"
         return
@@ -88,7 +88,7 @@ ejercicioSegundoDia.addEventListener(`submit`, (e) => {
     ejercicioRealizadoSegundoDia2.style.borderColor = ""
     pMostrar2.style.color = ""
     if (respuesta1 === "") {
-        document.getElementById("mostrarejercicio2").innerHTML = "porfavor insertar un valor correcto"
+        document.getElementById("mostrarejercicio2").innerHTML = "insertar un valor correcto"
         ejercicioRealizadoSegundoDia2.style.borderColor = "red"
         pMostrar2.style.color = "red"
         return
@@ -119,7 +119,7 @@ ejercicioTercerDia.addEventListener(`submit`, (e) => {
     e
 
     if (respuesta1 === "") {
-        document.getElementById("mostrarejercicio3").innerHTML = "porfavor insertar un valor correcto"
+        document.getElementById("mostrarejercicio3").innerHTML = "insertar un valor correcto"
         ejercicioRealizadoTercerDia2.style.borderColor = "red"
         pMostrar3.style.color = "red"
         return

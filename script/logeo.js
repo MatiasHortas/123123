@@ -14,14 +14,14 @@ boton.addEventListener(`click`, (e) => {
 
     logeoUsuario.forEach((usuario) => {
         if (usuarioLogin.value == usuario.usuario && contraseñaLogin.value == usuario.contraseña) {
-            swal("Te logeaste exitosamente", "Bievenido " + usuario.usuario, "success")
+            swal("Te logeaste exitosamente", "Bienvenido " + usuario.usuario, "success")
             setInterval(() => {
                 window.location = "../index.html"
             }, 2000);
         } else {
             usuarioLogin.value = ""
             contraseñaLogin.value = ""
-            textoLogeo.innerHTML = "Ingresaste lo datos incorrectos, porfavor ingresar nuevamente."
+            textoLogeo.innerHTML = "Ingresaste lo datos incorrectos, ingresar nuevamente."
             textoLogeo.style.color = "red";
             usuarioLogin.style.borderColor = "red"
             contraseña.style.borderColor = "red"

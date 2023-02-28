@@ -3,7 +3,6 @@ let contraseñaRegistro = document.getElementById("contraseñaRegister")
 let botonRegister = document.getElementById("botonRegister")
 let textRegistro = document.getElementById("textRegister")
 
-
 let usuariosRegistrados = []
 
 
@@ -24,12 +23,16 @@ botonRegister.addEventListener(`click`, (e) => {
     e.preventDefault()
 
 
-    if (usuarioRegistro.value == "" ||contraseñaRegistro.value == "") {
+    if (usuarioRegistro.value == "" || contraseñaRegistro.value == "") {
         textRegistro.innerHTML = "ingresar un valor valido"
     } else {
         usuariosRegistrados.push(new Usuarios(usuarioRegistro.value, contraseñaRegistro.value))
         localStorage.setItem("usuario", JSON.stringify(usuariosRegistrados));
-        textRegistro.innerHTML = "Tu cuenta fue creada"
+        swal("Usuario Registrado", "Ingresa tu usuario", "success")
+        setInterval(() => {
+            window.location = "./usuarioInicio.html"
+
+        }, 2000);
 
 
     }
@@ -40,18 +43,3 @@ botonRegister.addEventListener(`click`, (e) => {
 
 
 })
-
-// // se busca el usuario ingresado para que no pueda ingresar nuevamente el mismo
-
-function busquedaUsuario() {
-    let logeoUsuario = JSON.parse(localStorage.getItem(`usuario`));
-    logeoUsuario.forEach((usuario) => {
-        if (usuarioRegistro.value == usuario.usuario) {
-            textRegistro.innerHTML = "Ingresado ya registrado"
-        } else {
-            usuariosRegistrados.push(new Usuarios(usuarioRegistro.value, contraseñaRegistro.value))
-            localStorage.setItem("usuario", JSON.stringify(usuariosRegistrados));
-            textRegistro.innerHTML = "Tu cuenta fue creada"
-        }
-    });
-}
